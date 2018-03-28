@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/l_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/l_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="password"
+            android:inputType="textPassword" />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lbtngroup"
+            android:checkedButton="@+id/ltrainer">
+
+            <RadioButton
+                android:id="@+id/ltrainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Trainer" />
+
+            <RadioButton
+                android:id="@+id/ladmin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Admin" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/l_loginBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOGIN" />
+    </LinearLayout>
+</RelativeLayout>
